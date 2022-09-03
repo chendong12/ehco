@@ -1,4 +1,5 @@
 #!/bin/bash
+#this is for centos7
 
 # Color Settings
 red_prefix='\033[0;31m'
@@ -12,8 +13,8 @@ url="https://github.com/Ehco1996/ehco/releases/download/v1.1.1/ehco_1.1.1_linux_
 echo -e "${blue_prefix}[Info]${plain_prefix} 开始下载ehco文件..."
 wget -O /usr/bin/ehco $url &> /dev/null
 chmod +x /usr/bin/ehco
-
-wget 
+mkdir /usr/local/ehco/
+wget -O /usr/local/ehco/ehco.json https://raw.githubusercontent.com/chendong12/ehco/master/ehco.json
 
 echo -e "[Unit]
 Description=Ehco Tunnel Service
