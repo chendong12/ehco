@@ -1,0 +1,13 @@
+{
+  "enable_ping": false,
+
+  "relay_configs": [
+    {
+      "listen": "0.0.0.0:61105",
+      "listen_type": "raw",
+      "transport_type": "raw",
+      "tcp_remotes": ["destination_ip_address:4433"],
+      "udp_remotes": ["destination_ip_address:4433"]
+    }
+  ]
+}
